@@ -51,15 +51,15 @@ export class Lion extends Tamagotchi {
     }
     feelsGreat() {
         this.#element.style.backgroundColor = "#cbdacf";
-        this.#img.src = "../images/happylion.png"
+        this.#img.src = "images/happylion.png"
     }
     closeToDeath() {
         this.#element.style.backgroundColor = "#e6dfd3";
-        this.#img.src = "../images/sadlion.png"
+        this.#img.src = "images/sadlion.png"
     }
     death() {
         this.#element.style.backgroundColor = "#d9beb8";
-        this.#img.src = "../images/deadlion.png"
+        this.#img.src = "images/deadlion.png"
 
         this.#feedBtn.disabled = true;
         this.#comfortBtn.disabled = true;
@@ -77,7 +77,7 @@ export class Lion extends Tamagotchi {
         tamagotchi.append(this.#element);
         const nameText = document.createElement("h3");
         this.#img = document.createElement("img");
-        this.#img.src = "../images/happylion.png"
+        this.#img.src = "images/happylion.png"
         const hungerP = document.createElement("p");
         const comfortP = document.createElement("p");
         this.#element.append(nameText, this.#img, hungerP, comfortP);
